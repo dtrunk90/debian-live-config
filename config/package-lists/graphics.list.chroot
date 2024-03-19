@@ -1,8 +1,9 @@
 #Title: Graphics
 
 #Section: Image viewers and managers
-#Description: ristretto
-ristretto
+#Description: gthumb
+gthumb
+#Alt: ristretto
 #Alt: eog
 #Alt: eog-plugins
 #Alt: viewnior
@@ -16,26 +17,24 @@ ristretto
 #Alt: sxiv
 #Alt: catimg
 #Alt: shotwell
-#Alt: gthumb
 #Alt: digikam
 #Alt: fotoxx
 #Alt: geeqie
 #nomacs # sid only
 
-
 #Section: Image editors
-#Description: gimp
-gimp
-gimp-data-extras
-gimp-plugin-registry
-gimp-texturize
-gimp-gutenprint
-gimp-lensfun
-create-resources
+#Description: drawing
+drawing
+#Alt: gimp
+#Alt: gimp-data-extras
+#Alt: gimp-plugin-registry
+#Alt: gimp-texturize
+#Alt: gimp-gutenprint
+#Alt: gimp-lensfun
+#Alt: create-resources
 #Alt: gimp-help-fr
 #Alt: krita
 #Alt: gimp-gmic
-#Alt: drawing
 #Alt: mypaint
 #Alt: mtpaint
 #Alt: xpaint
@@ -53,8 +52,8 @@ create-resources
 #Alt: birdfont
 
 #Section: Drawing
-#Description: xournal
-xournal
+##Description: xournal
+#Alt: xournal
 #Alt: akira
 #Alt: xournalpp
 
@@ -64,7 +63,7 @@ xournal
 #Alt: luminance-hdr
 
 #Section: Color pickers
-gcolor3
+#Alt: gcolor3
 #Alt: gpick
 
 #Section: Batch image processing
@@ -77,7 +76,6 @@ gcolor3
 #Alt: rapid-photo-downloader
 #Alt: gtkam
 
-
 #Section: Game asset editors
 #Alt: tiled
 #Alt: games-content-dev
@@ -86,10 +84,10 @@ gcolor3
 #Alt: colorhug-client
 
 #Section: Diagram editors
-#Description: dia
-dia
-dia-shapes
-gsfonts-x11 
+##Description: dia
+#dia
+#dia-shapes
+#gsfonts-x11 
 
 #Section: Label/barcode editors
 ##Screenshot: glabels
@@ -143,11 +141,11 @@ gsfonts-x11
 #slowmovideo # bullseye only
 
 #Section: Command-line image manipulation
-imagemagick
-optipng
-jpegoptim
-exifprobe
-librsvg2-bin
+#Alt: imagemagick
+#Alt: optipng
+#Alt: jpegoptim
+#Alt: exifprobe
+#Alt: librsvg2-bin
 #Alt: figlet
 #Alt: toilet
 #Alt: converseen

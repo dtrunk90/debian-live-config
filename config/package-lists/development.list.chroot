@@ -1,10 +1,10 @@
 #Title: Development
 #Section: Version control
-git
-colordiff
-dwdiff
-cloc
-mgitstatus
+#Alt: git
+#Alt: colordiff
+#Alt: dwdiff
+#Alt: cloc
+#Alt: mgitstatus
 #Alt: meld
 #Alt: gitg
 #Alt: gource
@@ -30,18 +30,18 @@ mgitstatus
 
 #Section: Shell & basic utilities
 bash
-autojump
 bash-completion
-pv
 sed
 util-linux
-util-linux-locales
 whiptail
-moreutils
 less
-dialog
 manpages
-manpages-dev
+#Alt: autojump
+#Alt: pv
+#Alt: util-linux-locales
+#Alt: moreutils
+#Alt: dialog
+#Alt: manpages-dev
 #Alt: shellcheck
 #Alt: asciinema
 #Alt: undistract-me
@@ -69,9 +69,9 @@ manpages-dev
 #trurl # sid only
 
 #Section: Parsers/converters/documentation generators
-jq
-groff
-dos2unix
+#Alt: jq
+#Alt: groff
+#Alt: dos2unix
 #Alt: aha
 #Alt: xmlstarlet
 #Alt: pandoc
@@ -88,8 +88,8 @@ dos2unix
 #Alt: yq
 
 #Section: Packaging
-build-essential
-debconf-utils
+#Alt: build-essential
+#Alt: debconf-utils
 #Alt: checkinstall
 #Alt: fakeroot
 #Alt: lintian
@@ -109,18 +109,19 @@ debconf-utils
 #nvchecker # sid only
 
 #Section: Debuggers
-#Alt: gdb
+gdb
 #Alt: chaos-marmosets
 
 #Section: Python
-python3-setuptools
-python3-wheel
-python3-pip
-python3-venv
-python3-all-dev
+python3
+#Alt: python3-setuptools
+#Alt: python3-wheel
+#Alt: python3-pip
+#Alt: python3-venv
+#Alt: python3-all-dev
 
 #Section: Live system
-live-build
+#Alt: live-build
 #Alt: debootstrap
 #Alt: live-config-doc
 #Alt: live-manual-pdf
@@ -173,7 +174,6 @@ live-build
 #Section: Android
 #Alt: android-sdk
 #Alt: android-sdk-platform-tools-common
-#Alt: fastboot
 #Alt: adb
 #Alt: fastboot
 #scrcpy # sid only

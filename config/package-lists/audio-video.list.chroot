@@ -1,19 +1,20 @@
 #Title: Audio/video
 #Section: Video players
-#Description: vlc
+#Description: celluloid
 #Description: mpv
-vlc
-vlc-plugin-notify
-vlc-plugin-jack
-vlc-plugin-samba
-vlc-plugin-skins2
-vlc-plugin-video-splitter
-vlc-plugin-visualization
-vlc-plugin-video-output
-vlc-plugin-base
-vlc-plugin-qt
-libdvd-pkg
+celluloid
 mpv
+#Alt: vlc
+#Alt: vlc-plugin-notify
+#Alt: vlc-plugin-jack
+#Alt: vlc-plugin-samba
+#Alt: vlc-plugin-skins2
+#Alt: vlc-plugin-video-splitter
+#Alt: vlc-plugin-visualization
+#Alt: vlc-plugin-video-output
+#Alt: vlc-plugin-base
+#Alt: vlc-plugin-qt
+#Alt: libdvd-pkg
 #Alt: freetuxtv
 #Alt: gnome-dvb-client
 #Alt: gnome-mpv
@@ -25,20 +26,21 @@ mpv
 #Alt: totem
 #Alt: totem-plugins
 #Alt: vlc-plugin-svg
-#Alt: celluloid
 #Alt: vlc-plugin-bittorrent
 #Alt: mpv-mpris
 
 #Section: Music players/library managers
-#Description: quodlibet
-quodlibet
-exfalso
+#Description: rhythmbox
+rhythmbox
+rhythmbox-plugins
+rhythmbox-plugin-alternative-toolbar
 libgpod-common
 libgpod4
-sox
+go-mtpfs
+#Alt: quodlibet
+#Alt: exfalso
+#Alt: sox
 #Alt: gnome-music
-#Alt: rhythmbox
-#Alt: rhythmbox-plugins
 #Alt: clementine
 #Alt: audacious
 #Alt: audacious-plugins
@@ -63,7 +65,6 @@ sox
 #Alt: mussort
 #Alt: vagalume
 #Alt: gpodder
-#Alt: go-mtpfs
 #Alt: gtkpod
 #Alt: playerctl
 #Alt: streamtuner2
@@ -81,12 +82,12 @@ gnome-video-effects
 #Alt: zoneminder
 #Alt: pinhole
 #Alt: megapixels
-
+ 
 #Section: Screen recording/screencasting
-#Description: obs-studio
-#Description: vokoscreen-ng
-obs-studio
-vokoscreen-ng
+##Description: obs-studio
+##Description: vokoscreen-ng
+#Alt: obs-studio
+#Alt: vokoscreen-ng
 #Alt: kazam
 #Alt: byzanz
 #Alt: obs-source-clone
@@ -112,25 +113,29 @@ vokoscreen-ng
 #obs-time-source # sid only
 
 #Section: Media conversion/codecs
-#Description: qwinff
-qwinff
+#Description: ffmpeg
 ffmpeg
-flac
 gstreamer1.0-alsa
-gstreamer1.0-libav
-gstreamer1.0-plugins-bad
+gstreamer1.0-clutter-3.0
+gstreamer1.0-gl
+gstreamer1.0-gtk3
+gstreamer1.0-packagekit
 gstreamer1.0-plugins-base
 gstreamer1.0-plugins-good
 gstreamer1.0-plugins-ugly
 gstreamer1.0-pulseaudio
-gstreamer1.0-tools
 gstreamer1.0-x
-lame
 libmp3lame0
 libxvidcore4
-musepack-tools
-mediainfo
 media-player-info
+#Alt: qwinff
+#Alt: flac
+#Alt: gstreamer1.0-libav
+#Alt: gstreamer1.0-plugins-bad
+#Alt: gstreamer1.0-tools
+#Alt: lame
+#Alt: musepack-tools
+#Alt: mediainfo
 #Alt: handbrake
 #Alt: mp3splt
 #Alt: oggvideotools
@@ -164,34 +169,36 @@ media-player-info
 #Alt: gnome-subtitles
 
 #Section: Audio recording/editing
-#Description: audacity
-#Description: gnome-sound-recorder
-audacity
-gnome-sound-recorder
+##Description: audacity
+##Description: gnome-sound-recorder
+#Alt: audacity
+#Alt: gnome-sound-recorder
 #Alt: gwc
 #Alt: gjacktransport
 
 ##Section: Lighting
 #Alt: qlcplus
 
-
 #Section: Audio system
+#Description: pipewire
 #Description: pulseaudio
-pavucontrol
+pipewire
+pipewire-media-session
 pulseaudio
 pulseaudio-utils
 pulseaudio-module-bluetooth
-pulseaudio-module-lirc
-#Alt: pulseaudio-module-zeroconf
-pulseaudio-module-jack
 kmod
-alsa-oss
-alsa-tools
 alsa-utils
 libasound2-plugins
-oss-compat
-alsa-firmware-loaders
 rtkit
+#Alt: pavucontrol
+#Alt: pulseaudio-module-lirc
+#Alt: pulseaudio-module-zeroconf
+#Alt: pulseaudio-module-jack
+#Alt: alsa-oss
+#Alt: alsa-tools
+#Alt: oss-compat
+#Alt: alsa-firmware-loaders
 #Alt: pasystray
 #Alt: paprefs
 #Alt: pnmixer

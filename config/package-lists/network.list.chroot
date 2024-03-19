@@ -1,11 +1,11 @@
 #Title: Internet and network
 
 #Section: Web browsers
-#Description: firefox-esr
-firefox-esr
-firefox-esr-l10n-fr
-webext-ublock-origin-firefox
-webext-keepassxc-browser
+#Description: firefox
+firefox
+#Alt: firefox-l10n-fr
+#Alt: webext-ublock-origin-firefox
+#Alt: webext-keepassxc-browser
 #Alt: luakit
 #Alt: chromium
 #Alt: nss-passwords
@@ -44,16 +44,15 @@ webext-keepassxc-browser
 #smuxi # sid only
 
 #Section: VoIP/videoconference
-#Description: mumble
-mumble
+##Description: mumble
+#mumble
 #Alt: jami
 #Alt: linphone
-
 
 #Section: Mail clients
 #Description: thunderbird
 thunderbird
-thunderbird-l10n-fr
+#Alt: thunderbird-l10n-fr
 #Alt: geary
 #Alt: claws-mail
 #Alt: claws-mail-plugins
@@ -91,7 +90,7 @@ rsync
 #Section: Bittorrent
 #Description: transmission-gtk
 transmission-gtk
-transmission-cli
+#Alt: transmission-cli
 #Alt: qbittorrent
 #Alt: deluge-gtk
 #Alt: deluge-console
@@ -106,8 +105,9 @@ transmission-cli
 #amule-gnome-support # sid only
 
 #Section: Media download
-#Description: yt-dlp
-yt-dlp
+#Description: youtube-dl
+youtube-dl
+#Alt: yt-dlp
 #Alt: streamlink
 #Alt: minitube
 #Alt: smtube
@@ -116,8 +116,8 @@ yt-dlp
 #Section: Downloaders/web crawlers
 curl
 wget
-kiwix
-kiwix-tools
+#Alt: kiwix
+#Alt: kiwix-tools
 #Alt: aria2
 #Alt: zim-tools
 #Alt: httrack
@@ -145,11 +145,11 @@ kiwix-tools
 #Description: network-manager-gnome
 network-manager-gnome
 network-manager-openvpn-gnome
-wireguard
 dnsmasq-base
 hostname
-bridge-utils
-ethtool
+#Alt: wireguard
+#Alt: bridge-utils
+#Alt: ethtool
 #Alt: connman
 #Alt: connman-ui
 #Alt: cmst
@@ -169,7 +169,7 @@ ethtool
 #wicd-daemon # experimental only
 
 #Section: Cellphone and modem support
-#Alt: modemmanager
+modemmanager
 #Alt: modem-manager-gui
 #Alt: mobile-broadband-provider-info
 #Alt: usb-modeswitch
@@ -180,12 +180,11 @@ ethtool
 #scrcpy-server # sid only
 
 #Section: Wireless
-#Description: blueman
-blueman
-bluetooth
-blueman
+#Description: gnome-bluetooth
+gnome-bluetooth
 wireless-regdb
-#Alt: gnome-bluetooth
+#Alt: blueman
+#Alt: bluetooth
 #Alt: gnome-user-share
 #Alt: ganyremote
 #Alt: hostapd
@@ -196,8 +195,8 @@ wireless-regdb
 #Section: Firewall
 #Description: gufw
 ufw
-gufw
 iptables
+#Alt: gufw
 #Alt: ferm
 #Alt: iptables-persistent
 #Alt: firehol
@@ -207,10 +206,10 @@ iptables
 #Alt: opensnitch
 
 #Section: Network diagnostic/monitoring
-#Description: gnome-nettool
-gnome-nettool
-traceroute
-dnsutils
+##Description: gnome-nettool
+#Alt: gnome-nettool
+#Alt: traceroute
+#Alt: dnsutils
 #Alt: dnsmasq
 #Alt: dns-root-data
 #Alt: arpwatch
@@ -281,6 +280,7 @@ dnsutils
 #Alt: endlessh
 
 #Section: Remote access/desktop clients
+gnome-remote-desktop
 #Alt: remmina
 #Alt: remmina-plugin-rdp
 #Alt: remmina-plugin-vnc
@@ -292,9 +292,9 @@ dnsutils
 #remmina-plugin-xdmcp # sid only
 
 #Section: SSH
-#Description: openssh-server
-openssh-server
+#Description: openssh-client
 openssh-client
+#Alt: openssh-server
 #Alt: barrier
 #Alt: xpra
 #Alt: lightdm-remote-session-x2go

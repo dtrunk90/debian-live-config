@@ -1,8 +1,15 @@
 #Title: Games
 
 #Section: Games
-##Description: lutris
-##Screenshot: lutris
+#Description: aisleriot
+#Description: gnome-2048
+#Description: gnome-mahjongg
+#Description: gnome-mines
+aisleriot
+gnome-2048
+gnome-mahjongg
+gnome-mines
+gnome-sudoku
 #Alt: lutris
 #Alt: cmatrix
 #Alt: cmatrix-xfont

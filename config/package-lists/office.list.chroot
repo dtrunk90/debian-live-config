@@ -10,11 +10,11 @@ libreoffice-base
 libreoffice-gtk3
 libreoffice-java-common
 libreoffice-gnome
-libwmf-bin
-hyphen-fr
-libreoffice-l10n-fr
-mythes-fr
-libreoffice-help-fr
+#Alt: libwmf-bin
+#Alt: hyphen-fr
+#Alt: libreoffice-l10n-fr
+#Alt: mythes-fr
+#Alt: libreoffice-help-fr
 #Alt: abiword
 #Alt: calligraplan
 #Alt: calligrasheets
@@ -51,17 +51,16 @@ libreoffice-help-fr
 #calligraflow # sid only
 
 # Section: Calendars/contacts management
-#Alt: gnome-calendar
+gnome-calendar
 #Alt: evolution-data-server
 #Alt: abook
 #Alt: orage
 
 #Section: Personal finance
-#Description: homebank
-homebank
+##Description: homebank
+#Alt: homebank
 #Alt: gnucash
 #Alt: grisbi
-
 
 #Section: Document viewers
 #Description: evince
@@ -80,10 +79,10 @@ evince
 #Alt: calibre
 
 #Section: PDF editor/utilities
-#Description: pdfchain
-pdfchain
-pdfgrep
+#Description: poppler-utils
 poppler-utils
+#Alt: pdfchain
+#Alt: pdfgrep
 #Alt: qpdf
 #Alt: pdftk
 #Alt: pdfcrack
@@ -135,11 +134,10 @@ poppler-utils
 #Section: Image scanning
 #Description: simple-scan
 simple-scan
-imagemagick
 sane-utils
+#Alt: imagemagick
 #Alt: scanbd
 #Alt: xsane
-
 
 #Section: Optical Character Recognition (OCR)
 #Alt: paperwork-gtk
@@ -148,7 +146,6 @@ sane-utils
 #Alt: unpaper
 #Alt: yagf
 #Alt: ocrad
-
 
 #Section: Printing
 #Description: system-config-printer
@@ -167,40 +164,41 @@ cups-browsed
 #mtink # sid only
 
 #Section: Fonts
-#Description: fonts-hack-ttf
-fonts-averia-gwf
-fonts-breip
-fonts-cabinsketch
-fonts-cantarell
-fonts-century-catalogue
-fonts-crosextra-caladea
-fonts-dancingscript
-fonts-dosis
-fonts-droid-fallback
-fonts-dustin
-fonts-ecolier-court
-fonts-f500
-fonts-freefont-ttf
-fonts-hack-ttf
-fonts-inconsolata
-fonts-junicode
-fonts-jura
-fonts-kaushanscript
-fonts-knda
-fonts-levien-museum
-fonts-liberation
-fonts-linuxlibertine
-fonts-lobster
-fonts-lobstertwo
-fonts-ocr-a
-fonts-opensymbol
-fonts-roboto
-fonts-rufscript
-fonts-sil-andika
-fonts-sil-gentium-basic
-fonts-ubuntu-title
-ttf-mscorefonts-installer
-xfonts-terminus
+#Description: fonts-noto-core
+fonts-noto-core
+#Alt: fonts-averia-gwf
+#Alt: fonts-breip
+#Alt: fonts-cabinsketch
+#Alt: fonts-cantarell
+#Alt: fonts-century-catalogue
+#Alt: fonts-crosextra-caladea
+#Alt: fonts-dancingscript
+#Alt: fonts-dosis
+#Alt: fonts-droid-fallback
+#Alt: fonts-dustin
+#Alt: fonts-ecolier-court
+#Alt: fonts-f500
+#Alt: fonts-freefont-ttf
+#Alt: fonts-hack-ttf
+#Alt: fonts-inconsolata
+#Alt: fonts-junicode
+#Alt: fonts-jura
+#Alt: fonts-kaushanscript
+#Alt: fonts-knda
+#Alt: fonts-levien-museum
+#Alt: fonts-liberation
+#Alt: fonts-linuxlibertine
+#Alt: fonts-lobster
+#Alt: fonts-lobstertwo
+#Alt: fonts-ocr-a
+#Alt: fonts-opensymbol
+#Alt: fonts-roboto
+#Alt: fonts-rufscript
+#Alt: fonts-sil-andika
+#Alt: fonts-sil-gentium-basic
+#Alt: fonts-ubuntu-title
+#Alt: ttf-mscorefonts-installer
+#Alt: xfonts-terminus
 #Alt: fonts-aenigma
 #Alt: fonts-agave
 #Alt: fonts-arapey

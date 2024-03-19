@@ -32,4 +32,4 @@ RUN apt update && apt -y install \
 RUN git config --global --add safe.directory /tmp/workspace
 
 # remove 'download_extra' to build without third party software/dotfiles
-CMD ["make", "doc", "download_extra", "build"]
+CMD ["make", "build"]

@@ -1,27 +1,28 @@
 #Title: System
 
 #Section: Package management
-#Description: gnome-packagekit
-#Description: synaptic
-apt-listchanges
-apt-transport-https
-aptitude
-debconf-utils
-debian-archive-keyring
-debian-keyring
-debsecan
-debsums
-gnome-packagekit
-gnome-package-updater
+#Description: gnome-software
+#Description: gnome-package-updater
 packagekit
 packagekit-tools
 software-properties-gtk
-synaptic
 unattended-upgrades
-vrms
-gdebi
 command-not-found
-#Alt: gnome-package-updater
+gnome-software
+gnome-package-updater
+gstreamer1.0-packagekit
+#Alt: apt-listchanges
+#Alt: apt-transport-https
+#Alt: aptitude
+#Alt: debconf-utils
+#Alt: debian-archive-keyring
+#Alt: debian-keyring
+#Alt: debsecan
+#Alt: debsums
+#Alt: gnome-packagekit
+#Alt: synaptic
+#Alt: vrms
+#Alt: gdebi
 #Alt: debfoster
 #Alt: appstream-generator
 #Alt: apt-config-auto-update
@@ -32,8 +33,6 @@ command-not-found
 #Alt: debian-security-support
 #Alt: deborphan
 #Alt: debtree
-#Alt: gnome-software
-#Alt: gstreamer1.0-packagekit
 #Alt: needrestart
 #Alt: packagekit-command-not-found
 #Alt: packagekit-gtk3-module
@@ -43,23 +42,23 @@ command-not-found
 #Alt: nala
 
 #Section: Task management/monitoring
-#Description: xfce4-taskmanager
-xfce4-taskmanager
+#Description: gnome-system-monitor
+gnome-system-monitor
 htop
-iotop
 lm-sensors
 inxi
 lsof
 strace
 memtest86+
-#Alt: gnome-system-monitor
+lshw
+#Alt: xfce4-taskmanager
+#Alt: iotop
 #Alt: screenfetch
 #Alt: hardinfo
 #Alt: cputool
 #Alt: usbview
 #Alt: stress
 #Alt: stressapptest
-#Alt: lshw
 #Alt: lshw-gtk
 #Alt: bonnie++
 #Alt: x86info
@@ -103,20 +102,20 @@ deja-dup
 gnome-disk-utility
 gparted
 baobab
-ncdu
-dfc
-smartmontools
-mtools
 gdisk
 parted
 hdparm
-sdparm
 dosfstools
-hfsprogs
 ntfs-3g
 kpartx
-xorriso
 lvm2
+#Alt: ncdu
+#Alt: dfc
+#Alt: smartmontools
+#Alt: mtools
+#Alt: sdparm
+#Alt: hfsprogs
+#Alt: xorriso
 #Alt: gsmartcontrol
 #Alt: fsarchiver
 #Alt: partclone
@@ -134,8 +133,8 @@ lvm2
 #crazydiskinfo # sid only
 
 #Section: Data recovery
-#Description: testdisk
-testdisk
+##Description: testdisk
+#Alt: testdisk
 #Alt: foremost
 #Alt: scalpel
 #Alt: gddrescue
@@ -147,18 +146,17 @@ testdisk
 #Alt: forensics-full
 
 #Section: File cleaners/linters
-#Description: bleachbit
-bleachbit
-localepurge
+##Description: bleachbit
+#Alt: bleachbit
+#Alt: localepurge
 
 #Section: Log viewers
-#Description: gnome-system-log
-#Screenshot: gnome-system-log
-#Screenshot: lnav
-gnome-system-log
-lnav
-colortail
-#Alt: gnome-logs
+#Description: gnome-logs
+#Screenshot: gnome-logs
+gnome-logs
+#Alt: gnome-system-log
+#Alt: lnav
+#Alt: colortail
 #Alt: glogg
 #Alt: logtop
 #Alt: since
@@ -167,22 +165,21 @@ colortail
 #tailspin # sid only
 
 #Section: Virtualization
-#Description: virt-manager
-virt-manager
-virtinst
-virt-viewer
-ebtables
 dnsmasq-base
-libvirt-daemon-system
-gir1.2-spiceclientgtk-3.0
-qemu-system-x86
-qemu-system-arm
-qemu-utils
-libguestfs-tools
-virt-p2v
-libguestfs-rsync
-libguestfs-rescue
 netcat-openbsd
+#Alt: virt-manager
+#Alt: virtinst
+#Alt: virt-viewer
+#Alt: ebtables
+#Alt: libvirt-daemon-system
+#Alt: gir1.2-spiceclientgtk-3.0
+#Alt: qemu-system-x86
+#Alt: qemu-system-arm
+#Alt: qemu-utils
+#Alt: libguestfs-tools
+#Alt: virt-p2v
+#Alt: libguestfs-rsync
+#Alt: libguestfs-rescue
 #Alt: virt-p2v
 #Alt: virt-what
 #Alt: libguestfs-tools
@@ -207,14 +204,16 @@ netcat-openbsd
 #Alt: ansible
 
 #Section: Java
-default-jre
+#Alt: default-jre
 
 #Section: Display manager/screen locker
 #Description: lightdm
+accountsservice
 lightdm
-lightdm-gtk-greeter
-light-locker
-#Alt: accountsservice
+lightdm-settings
+slick-greeter
+#Alt: lightdm-gtk-greeter
+#Alt: light-locker
 #Alt: slim
 #Alt: gdm3
 #Alt: arctica-greeter
@@ -226,31 +225,31 @@ light-locker
 
 #Section: Boot screen
 plymouth
-plymouth-x11
 plymouth-themes
+#Alt: plymouth-x11
 
 #Section: Scheduling
-at
+#Alt: at
 
 #Section: Desktop performance
+irqbalance
 #Alt: haveged
 #Alt: rng-tools5
 #Alt: oomd
-#Alt: irqbalance
 #Alt: preload
 
 #Section: Security & sandboxing
 apparmor
-apparmor-profiles
-apparmor-utils
-libpam-tmpdir
 sudo
+#Alt: apparmor-profiles
+#Alt: apparmor-utils
+#Alt: libpam-tmpdir
 #Alt: apparmor-notify
 #Alt: apparmor-profiles-extra
 #Alt: doas
 
 #Section: Time
-chrony
+#Alt: chrony
 #Alt: ntp
 
 #Section: Display
@@ -262,8 +261,6 @@ xorg
 xinit
 xfonts-base
 xfonts-scalable
-xfonts-75dpi
-xfonts-100dpi
 xserver-xorg
 xserver-xorg-input-all
 xserver-xorg-input-wacom
@@ -279,6 +276,8 @@ xserver-xorg-video-all
 xserver-xorg-video-intel
 xfonts-base
 hwdata
+#Alt: xfonts-75dpi
+#Alt: xfonts-100dpi
 #Alt: nvidia-driver
 #Alt: nvidia-vaapi-driver
 #corctrl # sid only
@@ -290,15 +289,15 @@ linux-headers-amd64
 #if ARCHITECTURES i386
 linux-headers-686:i386
 #endif
-module-assistant
-dkms
-build-essential
 systemd
 os-prober
 initramfs-tools
 console-setup
 user-setup
 libpam-systemd
+#Alt: module-assistant
+#Alt: dkms
+#Alt: build-essential
 #Alt: kexec-tools
 #Alt: kthresher
 
@@ -325,10 +324,10 @@ intel-microcode
 #Alt: fprintd
 
 #Section: Live system components
-live-boot
-live-config
-live-config-systemd
-user-setup
-live-tools
+#Alt: live-boot
+#Alt: live-config
+#Alt: live-config-systemd
+#Alt: user-setup
+#Alt: live-tools
 eject
 #Alt: installation-birthday
